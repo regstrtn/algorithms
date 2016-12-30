@@ -44,7 +44,7 @@ int part(int arr[], int left, int right) {
     }
     yellow--;
     swap(arr[yellow], arr[left]);
-    for(i=left;i<right;i++) cout<<arr[i]<<" "; cout<<" partmid: "<<yellow<<endl;
+    //for(i=left;i<right;i++) cout<<arr[i]<<" "; cout<<" partmid: "<<yellow<<endl;
     return yellow;
 }
 
@@ -54,7 +54,7 @@ void quickSort(int arr[], int left, int right) {
    quickSort(arr, left, mid);
    quickSort(arr, mid+1, right);
     //cout<<"Before printing. left. mid. right"<<left<<" "<<mid<<" "<<right<<" "<<arr[left]<<" "<<arr[mid]<<" "<<arr[right]<<endl;
-    for(int i=left;i<right;i++) cout<<arr[i]<<" "; cout<<" mid: "<<mid<<endl;
+    //for(int i=left;i<right;i++) cout<<arr[i]<<" "; cout<<" mid: "<<mid<<endl;
 }
 
 int main()
@@ -67,6 +67,6 @@ int main()
     }
     //for(int i = 0;i<n;i++) cout<<arr[i]<<" "; cout<<endl;
     quickSort(arr, 0, n);
-    //for(int i = 0;i<n;i++) cout<<arr[i]<<" "; cout<<endl;
+    for(int i = 0;i<n;i++) cout<<arr[i]<<" "; cout<<endl;
     return 0;
 }
